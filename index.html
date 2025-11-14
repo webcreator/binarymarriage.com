@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Binary Marriage - Digitize your relationship with an NFT binary marriage certificate.</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/croppie.css">
+    <link rel="stylesheet" href="/css/app.css?v=3">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="csrf-token" content="cVDLJbV6Isd0ZRZwFWK9vQJcIPcK7kbcHk8ahaRE">
+</head>
+
+<body>
+<div class="wrapper" id="app">
+    <header data-lp data-scroll="1" class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo"><img class="main-logo" src="/img/logo_gradient.svg" alt="Logo"/>
+                <img class="certificate-logo" src="/img/logo_white.svg" alt="Logo"/>
+            </a>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a data-goto=".page__guide" data-goto-header href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".page__howitworks" data-goto-header href="#" class="menu__link">How its
+                                works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".page__questions" data-goto-header href="#" class="menu__link">Questions</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".page__community" data-goto-header href="#" class="menu__link">Community</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__actions">
+                <button type="button" class="button header__button button-certificate _icon-certificate">
+                    <span>Create Your Certificate</span>
+                </button>
+                <div data-da=".menu__list, 560" class="header__buttons">
+                    <a data-popup="#log-in" href="#" class="header__action _icon-user">
+                        <span v-if="wallet.length === 0">Your Account</span>
+                        <span v-if="wallet.length > 0">{wallet.substr(0, 8)}...</span>
+                    </a>
+                    <a v-if="wallet.length > 0" @click="onPageMyCertificate" class="header__action"
+                       style="padding: 0.625rem 0.625rem 0.625rem 1rem;">
+                        <span>My Certificates</span>
+                    </a>
+                    <a data-popup="#support" href="#" class="header__action _icon-support"><span>Support</span>
+                    </a>
+                </div>
+                <button type="button" class="menu__icon icon-menu"><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page" v-if="appMode === 1">
+        <section class="page__main main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1 class="main__title">
+                        First Binary Marriage - Get married without limitations! Any
+                        <span>sex</span>, <span>location</span> and
+                        <span>religion</span>.
+                    </h1>
+                    <div class="main__text">
+                        <p style="max-width: 530px;">Digitize your relationship with an NFT binary marriage certificate.
+                            Join a community of virtual married couples around the globe.
+                            A pure act of love without limitations and regulations.</p>
+                    </div>
+                    <div class="main__buttons">
+                        <button @click.prevent="startSteps" type="button"
+                                class="button main__button button-certificate _icon-certificate">
+                              Create your Certificate
+                        </button>
+                        <a data-goto=".page__howitworks" data-goto-header href="#" class="main__link">How it works</a>
+                    </div>
+                </div>
+                <div data-da=".main__content, 991.98, 2" class="main__media">
+                    <div class="main__certificate certificate certificate--big">
+                        <div class="certificate__wrapper">
+                            <div class="certificate__body">
+                                <div class="certificate__info">
+                                    <h3 class="certificate__title">
+                                        NFT CERTIFICATE OF BINARY MARRIAGE
+                                    </h3>
+                                    <div class="certificate__subtitle">
+                                        <p>
+                                            This is to certify that</br>
+                                            <span class="certificate__user">Lionel Johnson</span>
+                                            and
+                                            <span class="certificate__user">Nancy Sandra</span>
+                                        </p>
+                                        Were binary united in holy matrimony at
+                                        <span>Binary&nbsp;Marriage</span>
+                                    </div>
+                                    <div class="certificate__users">
+                                        <div class="certificate__user-image">
+                                            <picture>
+                                                <source srcset="/img/users/01.webp" type="image/webp">
+                                                <img src="/img/users/01.jpg" alt="User"/></picture>
+                                        </div>
+                                        <div class="certificate__user-image">
+                                            <picture>
+                                                <source srcset="/img/users/02.webp" type="image/webp">
+                                                <img src="/img/users/02.jpg" alt="User"/></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="certificate__details">
+                                    <div class="certificate__logo">
+                                        <img src="/img/logo_gradient.svg" alt="logo"/>
+                                    </div>
+                                    <div class="certificate__rings">
+                                        <picture>
+                                            <source srcset="/img/certificate/rings_1.webp" type="image/webp">
+                                            <img src="/img/certificate/rings_1.png" alt="Rings"/></picture>
+                                    </div>
+                                    <div class="certificate__code">
+                                        <img src="/img/certificate/qrcode.svg" alt="QRCode"/>
+                                    </div>
+                                    <div class="certificate__about">
+                                        <p>
+                                            Issued:
+                                            <span class="certificate__issued">September 14, 2023</span>
+                                        </p>
+                                        <p>
+                                            ID: <span class="certificate__id">BFF-1000</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__howitworks howitworks">
+            <div class="howitworks__container">
+                <h2 class="howitworks__title title">How Binary Marriage works</h2>
+                <div class="howitworks__columns">
+                    <div class="howitworks__column column-works">
+                        <div class="column-works__icon">
+                            <img src="/img/how_works/select.svg" alt="Select & Invite"/>
+                        </div>
+                        <div data-showmore class="column-works__body">
+                            <div data-showmore-content="113" class="column-works__content">
+                                <h3 class="column-works__title">Couple Profile Setup</h3>
+                                <div class="column-works__text">
+                                    Begin by uploading a photo of yourself and your beloved. Provide your names, dates of birth,                                     and email addresses.
+                                </div>
+                            </div>
+                            <button hidden data-showmore-button type="button" class="column-works__more">
+                                <span class="_icon-arrow">Show more</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="howitworks__column column-works">
+                        <div class="column-works__icon">
+                            <img src="/img/how_works/wallet.svg" alt="Sign by crypto wallets"/>
+                        </div>
+                        <div data-showmore class="column-works__body">
+                            <div data-showmore-content="113" class="column-works__content">
+                                <h3 class="column-works__title">Sign Using Crypto Wallets</h3>
+                                <div class="column-works__text">
+                                    Securely sign your Binary Wedding Certificate using your crypto wallets, adding an extra layer of authenticity and protection. If you don't have crypto wallets, consider using MetaMask - the leading self-custodial wallet. It offers a safe and simple way to access blockchain applications and web3, trusted by millions of users worldwide. Alternatively, for an even simpler approach, you can create a wallet using your email on WithPaper.com.
+                                </div>
+                            </div>
+                            <button hidden data-showmore-button type="button" class="column-works__more">
+                                <span class="_icon-arrow">Show more</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="howitworks__column column-works">
+                        <div class="column-works__icon">
+                            <img src="/img/how_works/openSea.svg" alt="Upload to OpenSea"/>
+                        </div>
+                        <div data-showmore class="column-works__body">
+                            <div data-showmore-content="113" class="column-works__content">
+                                <h3 class="column-works__title">Upload to OpenSea</h3>
+                                <div class="column-works__text">
+                                    Check your NFT certificate for accuracy and completeness. Proceed to pay the registration fee of $19 to finalize the process. Payment can be done by credit card or crypto, including ETH and Polygon. After a successful payment, your Binary Wedding Certificate will be registered and uploaded to OpenSea.
+                                </div>
+                            </div>
+                            <button hidden data-showmore-button type="button" class="column-works__more">
+                                <span class="_icon-arrow">Show more</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__happied happied">
+            <div class="happied__container">
+                <h2 class="happied__title title">Just married</h2>
+                <div class="happied__body">
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Lionel Johnson</span>
+                                                and
+                                                <span class="certificate__user">Nancy Sandra</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/01.webp" type="image/webp">
+                                                    <img src="/img/users/01.jpg" alt="User"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/02.webp" type="image/webp">
+                                                    <img src="/img/users/02.jpg" alt="User"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 14, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">BXD-1000</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Ethan Anderson</span>
+                                                and
+                                                <span class="certificate__user">Liam Parker</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/03.webp" type="image/webp">
+                                                    <img src="/img/users/03.jpg" alt="Ethan Anderson"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/04.webp" type="image/webp">
+                                                    <img src="/img/users/04.jpg" alt="Liam Parker"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 14, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">BFF-999</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Benjamin Mitchell</span>
+                                                and
+                                                <span class="certificate__user">Olivia Taylor</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/05.webp" type="image/webp">
+                                                    <img src="/img/users/05.jpg" alt="Benjamin Mitchell"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/06.webp" type="image/webp">
+                                                    <img src="/img/users/06.jpg" alt="Olivia Taylor"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 13, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">ASD-998</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Alexander Reynolds</span>
+                                                and
+                                                <span class="certificate__user">Sophia Walker</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/07.webp" type="image/webp">
+                                                    <img src="/img/users/07.jpg" alt="Alexander Reynolds"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/08.webp" type="image/webp">
+                                                    <img src="/img/users/08.jpg" alt="Sophia Walker"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 19, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">BXX-999</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Elowen Everhart</span>
+                                                and
+                                                <span class="certificate__user">Seraphina Wren</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/09.webp" type="image/webp">
+                                                    <img src="/img/users/09.jpg" alt="Elowen Everhart"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/10.webp" type="image/webp">
+                                                    <img src="/img/users/10.jpg" alt="Seraphina Wren"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 20, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">ESA-997</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happied__item">
+                        <div class="certificate certificate--small">
+                            <div class="certificate__wrapper">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            NFT CERTIFICATE OF BINARY MARRIAGE
+                                        </h3>
+                                        <div class="certificate__subtitle">
+                                            <p>
+                                                This is to certify that
+                                                <span class="certificate__user">Orion Nightshade</span>
+                                                and
+                                                <span class="certificate__user">Celestia Moonstone</span>
+                                            </p>
+
+                                            Were binary united in holy matrimony at
+                                            <span>Binary Marriage</span>
+                                        </div>
+                                        <div class="certificate__users">
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/11.webp" type="image/webp">
+                                                    <img src="/img/users/11.jpg" alt="Orion Nightshade"/></picture>
+                                            </div>
+                                            <div class="certificate__user-image">
+                                                <picture>
+                                                    <source srcset="/img/users/12.webp" type="image/webp">
+                                                    <img src="/img/users/12.jpg" alt="Celestia Moonstone"/></picture>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__about">
+                                            <p>
+                                                Issued:
+                                                <span class="certificate__issued">September 17, 2023</span>
+                                            </p>
+                                            <p>
+                                                ID:
+                                                <span class="certificate__id">ASD-999</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happied__footer">
+                    <button type="submit" class="button happied__button">
+                        View more couples
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="page__guide guide">
+            <div class="guide__container">
+                <h2 class="guide__title title">
+                    A Beginner’s Guide to MetaMask Wallet
+                </h2>
+                <div class="guide__body">
+                    <div class="guide__video">
+                        <iframe src="https://www.youtube.com/embed/YVgfHZMFFFQ?si=SMg5Q3Uhk7jRy22v"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__questions questions">
+            <div class="questions__container">
+                <h2 class="questions__title title title--white">
+                    Questions about service
+                </h2>
+                <div class="questions__body">
+                    <div data-spollers class="questions__spollers">
+                        <div class="questions__spollers-block">
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    What is Binary Marriage?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    Binary Wedding is an NFT-based binary marriage application service tailored for a diverse range of couples, including international, multi-international, gay, straight,
+                                    interracial, and interfaith couples. We streamline the marriage process. Simply
+                                    upload your photos, provide names, dates of birth, and complete your certificate
+                                    registration using a crypto wallet. <br>
+                                    Please note that Binary Marriage is not a replacement for traditional marriage. It does not possess any jurisdictional power and is purely a creation without imposing any legal obligations. <br>
+                                    Couples from around the world turn to Binary Wedding as an alternative to official marriage, avoiding bureaucratic hurdles and difficulties.
+
+                                </div>
+                            </div>
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    How much does it cost?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    Binary Wedding offers a comprehensive service for $19, which covers the entire
+                                    process of creating your unique NFT marriage certificate, uploading it to OpenSea,
+                                    and securely signing it with your crypto wallet. It's important to note that this
+                                    fee is a one-time charge for one certificate.  Payment can be done by credit card or crypto, including ETH and Polygon.
+                                </div>
+                            </div>
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    How I can create Certificate?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    <ul>
+
+                                        <li><strong>1. Upload Your Information.</strong> Begin by uploading a photo of
+                                            yourself and your beloved. Provide your names, dates of birth, and email
+                                            addresses.
+                                        </li>
+
+                                        <li><strong>2. Customize the Certificate.</strong> Customize the appearance of
+                                            your certificate by selecting the photo size and background colors that
+                                            resonate with your unique love story.
+
+                                        <li><strong>3. Secure Your Certificate with Crypto Wallets.</strong> Sign your
+                                            Binary Wedding Certificate securely using your crypto wallets, adding an
+                                            extra layer of authenticity and protection.
+
+                                        <li><strong>4. Review and Confirm. </strong>Take a moment to review the
+                                            certificate for accuracy and completeness. Ensure all details are correct.
+
+                                        <li><strong>5. Payment and Registration. </strong>Proceed to pay the
+                                            registration fee to finalize the process. This fee helps support the
+                                            registration and verification of your certificate.
+
+                                        <li><strong>6. Certificate Registration.</strong> After a successful payment,
+                                            your Binary Wedding Certificate will be registered and be uploaded to
+                                            OpenSea
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                    <i>By following these steps, you can create a personalized Binary Wedding
+                                        Certificate that represents your love and commitment while incorporating the
+                                        security and authenticity of blockchain technology.</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions__spollers-block">
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    What is NFT?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    NFT stands for "Non-Fungible Token." It is a digital asset that represents ownership
+                                    or proof of authenticity of a unique item using blockchain technology. Unlike
+                                    cryptocurrencies such as Bitcoin or Ethereum, which are fungible and can be
+                                    exchanged on a one-to-one basis, NFTs are distinct and cannot be exchanged on a
+                                    like-for-like basis because each NFT has a unique value or characteristic.
+                                    <br><br>
+                                    <i>NFTs are often used to represent ownership of digital or physical assets like
+                                        artwork, music, videos, collectibles, virtual real estate, and your wedding
+                                        certificate.</i>
+                                </div>
+                            </div>
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    How to create crypto wallet?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    <strong>Creating a Cryptocurrency Wallet with MetaMask:</strong>
+                                    <ul>
+                                        <li>- Install MetaMask: Visit the official <a href="https://metamask.io/"
+                                                                                      target="_blank">MetaMask
+                                                website</a> and install the MetaMask extension for your preferred web
+                                            browser (commonly used with browsers like Chrome or Firefox).
+                                        </li>
+
+                                        <li>- Launch MetaMask: Once installed, click on the MetaMask extension icon in
+                                            your browser's toolbar and follow the setup instructions.
+                                        </li>
+
+                                        <li>- Create a New Wallet: Click "Get Started" and then select "Create a
+                                            Wallet."
+                                        </li>
+
+                                        <li>- Set Up a Strong Password: Create a strong and secure password for your
+                                            wallet. Ensure it's something you can remember, as losing it may result in
+                                            losing access to your funds.
+                                        </li>
+
+                                        <li>- Backup Your Seed Phrase: MetaMask will provide you with a unique seed
+                                            phrase (a series of 12 or 24 words). Write this phrase down and keep it
+                                            safe. It's crucial for recovering your wallet if you ever lose access to it.
+                                        </li>
+
+                                        <li>- Confirm Your Seed Phrase: Confirm your seed phrase in the correct order to
+                                            verify it.
+                                        </li>
+
+                                        <li>- Wallet Created: Your MetaMask wallet is now created, and you can use it to
+                                            store, send, and receive cryptocurrencies.
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <strong>Creating a Cryptocurrency Wallet with WithPaper:</strong>
+                                    <ul>
+                                        <li>- Visit WithPaper: Go to the WithPaper website or in the platform chose
+                                            WithPaper wallet.
+                                        </li>
+
+                                        <li>- Sign Up: Click on the "Sign Up" or "Create Wallet" button.</li>
+
+                                        <li>- Provide Your Email: Enter your email address and choose a strong password
+                                            for your wallet.
+                                        </li>
+
+                                        <li>- Verification: Follow any verification steps required by the platform, such
+                                            as email confirmation or two-factor authentication (2FA).
+                                        </li>
+
+                                        <li>- Secure Your Account: After creating the wallet, follow any additional
+                                            security measures recommended by the platform, such as setting up 2FA if you
+                                            haven't already.
+                                        </li>
+
+                                        <li>- Access Your Wallet: Once your account is set up and secured, you can
+                                            access your wallet and start managing your cryptocurrencies.
+                                        </li>
+                                    </ul>
+                                    <br><br>
+                                    <i>Please note that the availability and specific steps for creating a wallet with
+                                        your email may vary depending on the platform or service you choose. Always
+                                        prioritize security by using strong, unique passwords and enabling additional
+                                        security features like 2FA when available. Additionally, be cautious of phishing
+                                        scams and ensure you're using official and reputable wallet services.</i>
+
+                                </div>
+                            </div>
+                            <div class="questions__spollers-item">
+                                <button type="button" data-spoller class="questions__spollers-title">
+                                    How to annulment Certificate?
+                                    <div class="questions__spollers-icon _icon-cross"></div>
+                                </button>
+                                <div class="questions__spollers-body">
+                                    Contact Binary Wedding support with your email and the certificate link. Binary
+                                    Wedding support will send confirmation emails to both parties on the certificate.
+                                    Both parties must confirm the annulment via email. Once verified, the Binary Wedding
+                                    Certificate will be annulled.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__subscribe subscribe">
+            <div class="subscribe__container">
+                <div class="subscribe__body">
+                    <div class="subscribe__text">
+                        <div class="subscribe__title">
+                            Get the Latest Updates
+                        </div>
+                        <div class="subscribe__subtitle">
+                            Subscribe to get news and updates
+                        </div>
+                    </div>
+                    <form action="#" class="subscribe__form form-subscribe">
+                        <div class="form-subscribe__row">
+                            <input autocomplete="off" type="text" name="form[email]" data-required="email"
+                                   placeholder="Enter your email" class="input form-subscribe__input"/>
+                            <button type="submit" class="button form-subscribe__button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="page__community community">
+            <div class="community__container">
+                <div class="community__header-block">
+                    <h2 class="community__title title title--white">
+                        Join our community (soon)
+                    </h2>
+                    <div class="community__subtitle">
+                        Chat with our team and others in the community to learn more
+                        about Binary Marriage
+                    </div>
+                </div>
+                <div class="community__columns">
+                    <a href="https://feed.binarymarriage.com/" class="community__column column-community">
+                        <div class="column-community__icon">
+                            <img src="/img/community/discord.svg" alt="Blog"/>
+                        </div>
+                        <div class="column-community__label">Our Blog</div>
+                    </a>
+                    <a href="https://twitter.com/BinaryMarriage" class="community__column column-community">
+                        <div class="column-community__icon">
+                            <img src="/img/community/twitter.svg" alt="Twitter"/>
+                        </div>
+                        <div class="column-community__label">Twitter</div>
+                    </a>
+                    <a href="#soon" class="community__column column-community">
+                        <div class="column-community__icon">
+                            <img src="/img/community/github.svg" alt="Github"/>
+                        </div>
+                        <div class="column-community__label">Github</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main class="page" v-if="appMode === 2">
+        <section class="page__happied happied">
+            <div class="happied__container">
+                <h2 class="happied__title title">My Certificates</h2>
+                <div class="happied__body">
+
+                    <div class="happied__item" v-for="(item, idx) in userCertificates" :key="idx">
+                        <div class="certificate certificate--small">
+                            <div class="">
+                                <div class="certificate__body">
+                                    <div class="certificate__info">
+                                        <h3 class="certificate__title">
+                                            {item.title}
+                                        </h3>
+
+                                        <div class="certificate__users">
+                                            <a :href="item.url" target="_blank">
+                                                <img :src="item.img" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="certificate__about">
+                                            <p> Issued: <span class="certificate__issued">{item.date}</span></p>
+                                            <p> ID: <span class="certificate__id">{item.id}</span></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p v-if="userCertificates !== null && userCertificates.length === 0">Certificates not found</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copywright">
+                <p>© All Rights Reserved</p>
+                <p>BinaryMarriage.com 2023</p>
+            </div>
+            <a href="terms_of_service.html" class="footer__terms">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div id="start" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close _icon-close"></button>
+                <div class="popup__body">
+
+                    <form-header :title="title" :step="step"></form-header>
+
+                    <form v-show="isStep1" action="#" class="popup__inner popup__form form-popup">
+
+                        <photo-uploader
+                            :photo="your_photo_url"
+                            @on-done="onDone1" @on-error="onError1">
+                        </photo-uploader>
+
+                        <div class="form-popup__inputs inputs-block">
+                            <div class="form-popup__row _icon-email">
+                                <input autocomplete="off" type="email" name="form[email]" placeholder="Your Email"
+                                       v-model="your_email"
+                                       class="input form-popup__input"/>
+                            </div>
+                            <div class="form-popup__row _icon-user-popup">
+                                <input autocomplete="off" type="text" name="form[name_surname]"
+                                       v-model="your_name"
+                                       placeholder="Your Name and Surname" class="input form-popup__input"/>
+                            </div>
+                            <date-field v-model="your_bday"></date-field>
+
+                            <div v-if="step_1_error.length > 0" style="color: red; text-align: center">
+                                {step_1_error}
+                            </div>
+                        </div>
+
+                        <div class="form-popup__buttons buttons-block">
+
+                            <def-button type="button" @click="step1Done"
+                                        title="Next Step" :processing="processing"
+                                        class="button gradient-button">
+                            </def-button>
+
+                        </div>
+
+                    </form>
+
+                    <form v-show="isStep2" action="#" class="popup__inner popup__form form-popup only-photo">
+                        <div class="form-popup__photo-drag photo-drag">
+                            <div class="photo-drag__image">
+
+                                <picture>
+                                    <img :src="your_photo_url_preview" alt="User"/>
+                                </picture>
+
+                            </div>
+                            <div class="photo-drag__label"><!-- Drag photo --></div>
+                        </div>
+
+                        <div class="form-popup__change">
+                            <div class="form-popup__subtitle">Border color</div>
+                            <div class="change-border__slider swiper">
+                                <div class="change-border__wrapper swiper-wrapper options">
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-user_1" class="options__input" checked type="radio"
+                                                   v-model="border_color"
+                                                   data-bg="#657EFA" value="#657EFA" name="border-user"/>
+                                            <label for="border-user_1" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-user_2" class="options__input" type="radio"
+                                                   data-bg="#D2D2D2"
+                                                   v-model="border_color"
+                                                   value="#D2D2D2" name="border-user"/>
+                                            <label for="border-user_2" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-user_3" class="options__input" type="radio"
+                                                   data-bg="#000000"
+                                                   v-model="border_color"
+                                                   value="#000000" name="border-user"/>
+                                            <label for="border-user_3" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-user_4" class="options__input" type="radio"
+                                                   data-bg="#FF9C7D"
+                                                   v-model="border_color"
+                                                   value="#FF9C7D" name="border-user"/>
+                                            <label for="border-user_4" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-user_5" class="options__input" type="radio"
+                                                   data-bg="#5972F6"
+                                                   v-model="border_color"
+                                                   value="#5972F6" name="border-user"/>
+                                            <label for="border-user_5" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-popup__buttons buttons-block">
+                            <def-button title="Next Step" class="button form-popup__button--apply gradient-button"
+                                        @click.prevent="step2Done"></def-button>
+
+                            <def-button title="Previous" class="button form-popup__button--previous button-previous"
+                                        @click.prevent="prevStep"></def-button>
+
+                        </div>
+                    </form>
+
+                    <form v-show="isStep3" action="#" class="popup__inner popup__form form-popup">
+
+                        <photo-uploader
+                            :photo="beloved_photo_url"
+                            @on-done="onDone2" @on-error="onError2">
+                        </photo-uploader>
+
+                        <div class="form-popup__inputs inputs-block">
+
+                            <div class="form-popup__row _icon-email">
+                                <input autocomplete="off" type="email" placeholder="Beloved Email"
+                                       v-model="beloved_email"
+                                       class="input form-popup__input"/>
+                            </div>
+
+                            <div class="form-popup__row _icon-user-popup">
+                                <input autocomplete="off" type="text"
+                                       v-model="beloved_name"
+                                       placeholder="Beloved Name and Surname" class="input form-popup__input"/>
+                            </div>
+
+                            <date-field v-model="beloved_bday"></date-field>
+
+                            <div v-if="step_3_error.length > 0" style="color: red; text-align: center">
+                                {step_3_error}
+                            </div>
+                        </div>
+                        <div class="form-popup__buttons buttons-block">
+
+                            <def-button @click="step3Done" type="button"
+                                        :processing="processing"
+                                        title="Next Step"
+                                        class="button form-popup__button--apply gradient-button">
+                            </def-button>
+
+                            <def-button title="Previous"
+                                        class="button form-popup__button--previous button-previous"
+                                        @click.prevent="prevStep"></def-button>
+
+                        </div>
+                    </form>
+
+                    <form v-show="isStep4" action="#" class="popup__inner popup__form form-popup only-photo">
+                        <div class="form-popup__photo-drag photo-drag">
+                            <div class="photo-drag__image">
+                                <picture>
+                                    <img :src="beloved_photo_url_preview" alt="User"/></picture>
+                            </div>
+                            <div class="photo-drag__label"><!-- Drag photo --></div>
+                        </div>
+
+                        <div class="form-popup__change">
+                            <div class="form-popup__subtitle">Border color</div>
+                            <div class="change-border__slider swiper">
+                                <div class="change-border__wrapper swiper-wrapper options">
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-beloved_1" class="options__input" checked type="radio"
+                                                   v-model="beloved_border_color"
+                                                   data-bg="#657EFA" value="#657EFA" name="border-beloved"/>
+                                            <label for="border-beloved_1" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-beloved_2" class="options__input" type="radio"
+                                                   v-model="beloved_border_color"
+                                                   data-bg="#D2D2D2" value="#D2D2D2" name="border-beloved"/>
+                                            <label for="border-beloved_2" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-beloved_3" class="options__input" type="radio"
+                                                   v-model="beloved_border_color"
+                                                   data-bg="#000000" value="#000000" name="border-beloved"/>
+                                            <label for="border-beloved_3" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-beloved_4" class="options__input" type="radio"
+                                                   v-model="beloved_border_color"
+                                                   data-bg="#FF9C7D" value="#FF9C7D" name="border-beloved"/>
+                                            <label for="border-beloved_4" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-border__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="border-beloved_5" class="options__input" type="radio"
+                                                   v-model="beloved_border_color"
+                                                   data-bg="#5972F6" value="#5972F6" name="border-beloved"/>
+                                            <label for="border-beloved_5" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-popup__buttons buttons-block">
+
+                            <def-button title="Next Step" class="button form-popup__button--apply gradient-button"
+                                        @click.prevent="step4Done"></def-button>
+
+                            <def-button title="Previous" class="button form-popup__button--previous button-previous"
+                                        @click.prevent="prevStep"></def-button>
+
+                        </div>
+                    </form>
+
+                    <form v-show="isStep5" action="#" class="popup__inner popup__form form-popup">
+                        <div class="form-popup__certificate">
+                            <div class="certificate certificate--big">
+                                <div class="certificate__wrapper"
+                                     style="background: linear-gradient(264.37deg, rgb(122, 210, 255) -5.96%, rgb(138, 92, 255) 45.92%, rgb(255, 121, 184) 100%);"
+                                >
+                                    <div class="certificate__body">
+                                        <div class="certificate__info">
+                                            <h3 class="certificate__title">
+                                                NFT CERTIFICATE OF BINARY MARRIAGE
+                                            </h3>
+                                            <div class="certificate__subtitle">
+                                                <p>
+                                                    This is to certify that <br/>
+                                                    <span class="certificate__user">{your_name}</span>
+                                                    and
+                                                    <span class="certificate__user">{beloved_name}</span>
+                                                </p>
+                                                Were binary united in holy matrimony at
+                                                <span>Binary Marriage</span>
+                                            </div>
+                                            <div class="certificate__users">
+                                                <div class="certificate__user-image">
+                                                    <picture>
+                                                        <img :src="your_photo_url_preview" alt="User"/></picture>
+                                                </div>
+                                                <div class="certificate__user-image">
+                                                    <picture>
+                                                        <img :src="beloved_photo_url_preview" alt="User"/></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__details">
+                                            <div class="certificate__logo">
+                                                <img src="/img/logo_gradient.svg" alt="logo"/>
+                                            </div>
+                                            <div class="certificate__rings">
+                                                <picture>
+                                                    <source srcset="/img/certificate/rings_1.webp" type="image/webp">
+                                                    <img src="/img/certificate/rings_1.png" alt="Rings"/></picture>
+                                            </div>
+                                            <div class="certificate__code">
+                                                <img src="/img/certificate/qrcode.svg" alt="QRCode"/>
+                                            </div>
+                                            <div class="certificate__about">
+                                                <p>
+                                                    Issued:
+                                                    <span class="certificate__issued">November 14, 2025</span>
+                                                </p>
+                                                <p>
+                                                    ID: <span class="certificate__id">BMY-1001</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-popup__change">
+                            <div class="form-popup__subtitle">Change background</div>
+                            <div class="change-bg__slider swiper">
+                                <div class="change-bg__wrapper swiper-wrapper options">
+
+
+                                    <div class="change-bg__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="bg_1" class="options__input" checked type="radio" data-bg="linear-gradient(
+                                  264.37deg,
+                                  #7ad2ff -5.96%,
+                                  #8a5cff 45.92%,
+                                  #ff79b8 100%)" value="0" name="change-bg" v-model="theme"/>
+                                            <label for="bg_1" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-bg__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="bg_2" class="options__input" type="radio" data-bg="linear-gradient(
+                                      264.37deg,
+                                      #89B1DB -5.96%,
+                                      #96CAE5 45.92%,
+                                      #89B1DB 100%)" value="1" name="change-bg" v-model="theme"/>
+                                            <label for="bg_2" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-bg__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="bg_3" class="options__input" type="radio" data-bg="linear-gradient(
+                                     264.37deg,
+                                     #DC70CE -5.96%,
+                                     #FF96CE 45.92%,
+                                     #DC70CE 100%)" value="2" name="change-bg" v-model="theme"/>
+                                            <label for="bg_3" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-bg__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="bg_4" class="options__input" type="radio" data-bg="linear-gradient(
+                                     264.37deg,
+                                     #8297FF -5.96%,
+                                     #93E5FF 45.92%,
+                                     #7EB6FF 100%)" value="3" name="change-bg" v-model="theme"/>
+                                            <label for="bg_4" class="options__label"><span
+                                                    class="options__text"></span></label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-popup__change">
+                            <div class="form-popup__subtitle">Change font</div>
+                            <div class="change-font__slider swiper">
+                                <div class="change-font__wrapper swiper-wrapper options">
+
+                                    <div class="change-font__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="font_1" class="options__input" type="radio" checked value="Inter"
+                                                   v-model="font"
+                                                   name="fonts"/>
+                                            <label for="font_1" class="options__label"><span
+                                                    class="options__text">Aa</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-font__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="font_2" class="options__input" type="radio" value="Montserrat"
+                                                   v-model="font"
+                                                   name="fonts"/>
+                                            <label for="font_2" class="options__label"><span
+                                                    class="options__text">Aa</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-font__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="font_3" class="options__input" type="radio" value="Poppins"
+                                                   v-model="font"
+                                                   name="fonts"/>
+                                            <label for="font_3" class="options__label"><span
+                                                    class="options__text">Aa</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="change-font__slide swiper-slide">
+                                        <div class="options__item">
+                                            <input id="font_4" class="options__input" type="radio" value="Nunito"
+                                                   v-model="font"
+                                                   name="fonts"/>
+                                            <label for="font_4" class="options__label"><span
+                                                    class="options__text">Aa</span></label>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div v-if="step_5_error.length > 0" style="color: red; text-align: center">
+                            {step_5_error}
+                        </div>
+                        <div class="form-popup__buttons buttons-block">
+                            <def-button type="button" @click="step5Done"
+                                        :processing="processing"
+                                        title="Next Step"
+                                        class="button gradient-button">
+                            </def-button>
+                            <def-button title="Previous" class="button form-popup__button--previous button-previous"
+                                        @click.prevent="prevStep"></def-button>
+                        </div>
+                    </form>
+
+                    <form v-show="isStep6" action="#" class="popup__inner popup__form form-popup">
+                        <div class="form-popup__certificate">
+                            <div class="certificate certificate--big">
+                                <div class="certificate__wrapper">
+                                    <div class="certificate__body">
+                                        <div class="certificate__info">
+                                            <h3 class="certificate__title">
+                                                NFT CERTIFICATE OF BINARY MARRIAGE
+                                            </h3>
+                                            <div class="certificate__subtitle">
+                                                <p>
+                                                    This is to certify that <br/>
+                                                    <span class="certificate__user">{your_name}</span>
+                                                    and
+                                                    <span class="certificate__user">{beloved_name}</span>
+                                                </p>
+                                                Were binary united in holy matrimony at
+                                                <span>Binary Marriage</span>
+                                            </div>
+                                            <div class="certificate__users">
+                                                <div class="certificate__user-image">
+                                                    <picture>
+                                                        <img :src="your_photo_url_preview" alt="User"/></picture>
+                                                </div>
+                                                <div class="certificate__user-image">
+                                                    <picture>
+                                                        <img :src="beloved_photo_url_preview" alt="User"/></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="certificate__details">
+                                            <div class="certificate__logo">
+                                                <img src="/img/logo_gradient.svg" alt="logo"/>
+                                            </div>
+                                            <div class="certificate__rings">
+                                                <picture>
+                                                    <source srcset="/img/certificate/rings_1.webp" type="image/webp">
+                                                    <img src="/img/certificate/rings_1.png" alt="Rings"/></picture>
+                                            </div>
+                                            <div class="certificate__code">
+                                                <img src="/img/certificate/qrcode.svg" alt="QRCode"/>
+                                            </div>
+                                            <div class="certificate__about">
+                                                <p>
+                                                    Issued:
+                                                    <span class="certificate__issued">{issued}</span>
+                                                </p>
+                                                <p>
+                                                    ID: <span class="certificate__id">{code}</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-popup__socials socials-certificate">
+                            <div class="socials-certificate__row" style="padding: 0 10px;">
+                               <div class="socials-certificate__row" style="padding: 0px 10px;">
+                                <div class="column-works__text">
+                                    <strong>Review your Binary Wedding Certificate</strong> to ensure all details are accurate and complete.
+                                </div>
+                                <div class="column-works__text" style="padding-top: 10px;">
+                                    If everything is correct, proceed to pay the <strong>${nftPrice} registration fee</strong> to finalize the process.
+                                </div>
+                                <div class="column-works__text" style="padding-top: 10px;">
+                                    After clicking Checkout, please be patient as it may take <strong>1-2 minutes</strong> to prepare your certificate. Do not close the window.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="socials-certificate__row">
+
+                                <div v-if="step_6_error.length > 0"
+                                     style="color: red; text-align: center;margin-bottom: 15px">
+                                    {step_6_error}
+                                </div>
+
+                                <div class="form-popup__buttons buttons-block">
+                                    <def-button title="Checkout"
+                                                :processing="processing"
+                                                class="button socials-certificate__printed-button gradient-button"
+                                                @click.prevent="onCheckout"></def-button>
+
+                                    <def-button v-if="!processing" title="Previous" class="button form-popup__button--previous button-previous"
+                                                @click.prevent="prevStep"></def-button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="log-in" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close _icon-close"></button>
+                <div class="popup__body">
+                    <div class="popup__header-block">
+                        <h3 class="popup__title">Log In</h3>
+                        <div class="popup__label">Log in at Binary Wedding via</div>
+                    </div>
+                    <form action="#" class="popup__inner popup__form form-popup">
+                        <div id="root"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="support" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close _icon-close"></button>
+                <div class="popup__body">
+                    <div class="popup__header-block">
+                        <h3 class="popup__title">Have a question?</h3>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form"
+                          class="popup__inner popup__form form-popup">
+                        <input type="hidden" name="access_key" value="c933aa18-8032-4ed6-a4dc-47651a062fdb"/>
+                        <input type="hidden" name="subject" value="BW support request"/>
+                        <input type="checkbox" name="botcheck" id="" style="display: none;"/>
+                        <div class="form-popup__textarea _icon-edit">
+                            <textarea autocomplete="off" name="message" id="message"
+                                      placeholder="Type your question here..." class="textarea input"
+                                      required></textarea>
+                        </div>
+                        <div class="form-popup__inputs inputs-block">
+                            <div class="form-popup__row _icon-email">
+                                <input type="email" name="email" id="email"
+                                       placeholder="Your Email" class="input form-popup__input" required/>
+                            </div>
+                            <div class="form-popup__row _icon-user-popup">
+                                <input name="name" id="name" type="text" placeholder="Your Name "
+                                       class="input form-popup__input" required/>
+                            </div>
+                            <div class="form-popup__row _icon-phone">
+                                <input type="text" name="phone" id="phone"
+                                       placeholder="Your Phone" class="input form-popup__input"/>
+                            </div>
+                        </div>
+                        <div class="form-popup__buttons buttons-block">
+                            <button type="submit"
+                                    class="button form-popup__button--apply gradient-button">
+                                Send Message
+                            </button>
+                        </div>
+                        <p class="text-base text-center text-gray-400" id="result"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Support Form Code -->
+<script>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+        var object = {};
+        formData.forEach((value, key) => {
+            object[key] = value;
+        });
+        var json = JSON.stringify(object);
+        result.innerHTML = "Please wait...";
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function () {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 5000);
+            });
+    });
+
+</script>
+
+<!-- Analytics Code -->
+<script src="https://t.usermaven.com/lib.js" 
+    data-key="UMa6EwatPJ" 
+    data-tracking-host="https://events.usermaven.com"
+    data-autocapture="true"   
+    defer>
+</script>
+<script>window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})</script>
+
+
+<script src="/js/vue.global.js"></script>
+<script src="/js/croppie.min.js"></script>
+<script src="/js/cleave.min.js"></script>
+<script src="/js/main.js?v=28"></script>
+<script>
+    window.paperChainLive = 1;
+    window.paperClientId = '493d4210-25ac-4ec2-b72d-062b8436d266';
+</script>
+<script src="/js/wallets.js?v=10"></script>
+<script src="/js/init.js?v=7"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.dropanddrag__label-delete, .dropanddrag__label-delete:hover {
+    background-color: #f94c4c;
+}
+
+.croppie-container .cr-viewport, .croppie-container .cr-resizer {
+    box-shadow: 0 0 2000px 2000px rgb(242, 246, 252);
+}
+
+.person-photo {
+    height: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.certificate-page .certificate--big .certificate__title {
+    font-size: 2.6rem;
+}
+
+@media (min-width: 37.5em) {
+    .certificate__title {
+        font-size: 1.7rem;
+    }
+}
+
+.dots-loader {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: d5 1s infinite linear alternate;
+}
+@keyframes d5 {
+    0%  {box-shadow: 20px 0 #ff79b8 , -20px 0 #8a5cff;background: #ff79b8 }
+    33% {box-shadow: 20px 0 #ff79b8, -20px 0 #8a5cff;background: #8a5cff}
+    66% {box-shadow: 20px 0 #8a5cff,-20px 0 #ff79b8; background: #8a5cff}
+    100%{box-shadow: 20px 0 #8a5cff,-20px 0 #ff79b8; background: #ff79b8 }
+}
